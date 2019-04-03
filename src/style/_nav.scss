@@ -1,0 +1,20 @@
+// main: main.scss
+
+nav {
+    z-index: 1;
+    position: absolute !important;
+    top: 0;
+    width: 100%;
+
+    button {
+        color: #fff;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    a:hover {
+        color: $yellow;
+    }
+}
