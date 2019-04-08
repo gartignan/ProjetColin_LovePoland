@@ -2,10 +2,11 @@
 
 header {
     height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
     background: url("./../img/fond.png");
     background-attachment: fixed;
+    padding: 10px;
 
     .filter {
         height: 100%;
@@ -14,7 +15,7 @@ header {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin-top: -250px;
+            margin-top: -230px;
             @media screen and (max-width: 1200px){
                 margin-top: 0;
             }

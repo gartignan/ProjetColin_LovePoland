@@ -67,10 +67,11 @@ h3 {
 
 header {
   height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
   background: url("./../img/fond.png");
   background-attachment: fixed;
+  padding: 10px;
 }
 
 header .filter {
@@ -91,7 +92,7 @@ header .filter div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: -250px;
+  margin-top: -230px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -202,7 +203,8 @@ section#mainVille div.cardContainer div.mainVille {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  background-size: cover;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
   margin-right: 10px;
   margin-left: 10px;
   transition-duration: 1s;
@@ -636,6 +638,7 @@ section#enjoy {
       -ms-flex-align: center;
           align-items: center;
   background-attachment: fixed;
+  padding: 10px;
 }
 
 section#enjoy h5 {

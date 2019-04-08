@@ -32,7 +32,8 @@ section#mainVille {
             align-items: center;
             flex-direction: column;
             text-align: center;
-            background-size: cover;
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
             margin-right: 10px;
             margin-left: 10px;
             transition-duration: 1s;
@@ -387,6 +388,7 @@ section#enjoy {
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
+    padding: 10px;
 
     h5 {
         font-size: 92px;
@@ -404,7 +406,6 @@ section#enjoy {
         font-size: 18px;
         font-weight: 400;
         margin-top: 31px;
-        //line-height: 94.54px;
         margin-bottom: 0;
         color: #fff;
         @media screen and (max-width: 1200px){
