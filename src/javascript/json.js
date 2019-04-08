@@ -37,7 +37,7 @@ function whenutrytohard(array){
   for (i in array) {
     array[i].name = array[i].name.toLowerCase();
     let card = document.createElement("DIV");
-    card.className = "col-sm-4";
+    card.className = "col-md-4";
     card.innerHTML = "<div class='secondaryVille'><img src=" + array[i].img[0].src + " alt=" + array[i].img[0].imgDescription + " class='img-responsive'/><h5>" + array[i].name + "</h5> <p>" + array[i].originalName + "</p> <button class='button'>view offers</button></div>";
     document.querySelector("#secondaryVilles>.villes").appendChild(card);
   }

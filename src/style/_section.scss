@@ -6,10 +6,6 @@ section#mainVille {
     left: 0;
     top: -316.5px;
     height: auto;
-
-    //bottom: -216.5px;
-    //margin-top: -316.5px;
-    //bottom: 316.5px;
     h2 {
         text-align: center;
         color: #fff;
@@ -254,7 +250,20 @@ section#secondaryVilles {
 section#description {
     background-color: #f8f9fb;
     min-height: 50%;
+    #textIntheBack {
+        text-shadow: 0 0 125px rgba(141, 148, 169, 0.25);
+        font-weight: 700;
+        position: absolute;
+        
+        right: 0;
+        width: 50%;
+        font-size: 150px;
+        word-break: break-all;
+        text-align: right;
+        text-transform: uppercase;
+    }
     h4 {
+        z-index: 1;
         text-align: center;
         padding-top: 71px;
         color: $font-normal;
@@ -295,7 +304,6 @@ section#description {
             width: 100%;
         }
         div#border {
-            z-index: 0;
             border: 10px solid $yellow;
             position: absolute;
             height: 100%;
@@ -320,7 +328,6 @@ section#enjoy {
     h5 {
         font-size: 92px;
         font-weight: 700;
-        //line-height: 92px;
         color: #fff;
     }
 

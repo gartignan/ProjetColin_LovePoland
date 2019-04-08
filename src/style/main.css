@@ -353,7 +353,20 @@ section#description {
   min-height: 50%;
 }
 
+section#description #textIntheBack {
+  text-shadow: 0 0 125px rgba(141, 148, 169, 0.25);
+  font-weight: 700;
+  position: absolute;
+  right: 0;
+  width: 50%;
+  font-size: 150px;
+  word-break: break-all;
+  text-align: right;
+  text-transform: uppercase;
+}
+
 section#description h4 {
+  z-index: 1;
   text-align: center;
   padding-top: 71px;
   color: #606f81;
@@ -400,7 +413,6 @@ section#description div#imgShow img {
 }
 
 section#description div#imgShow div#border {
-  z-index: 0;
   border: 10px solid #ffc74a;
   position: absolute;
   height: 100%;
@@ -505,6 +517,7 @@ section#right p#back {
   width: 30px;
   height: 100%;
   position: fixed;
+  background-color: rgba(255, 0, 0, 0.582);
   top: 0;
   left: 50%;
   right: 50%;
