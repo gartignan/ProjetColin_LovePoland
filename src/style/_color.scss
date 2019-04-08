@@ -7,3 +7,51 @@ $font-normal: #606f81;
 $background-grey: #bdc8d9;
 $grey-button: #8d97a5;
 
+// titre v //
+h1 {
+    font-size: 92px;
+    @media screen and (max-width: 1200px){
+        font-size: calc(92px/1.1);
+    }
+    @media screen and (max-width: 600px){
+        font-size: calc(92px/1.5);
+    }
+}
+
+h3 {
+    font-size: 30px;
+    @media screen and (max-width: 1200px){
+        font-size: calc(30px/1.1);
+    }
+    @media screen and (max-width: 600px){
+        font-size: calc(30px/1.5);
+    }
+    
+}
+
+.button {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 51px;
+    background-color: $yellow;
+    color: $font-yellow;
+    border: none;
+    letter-spacing: 1.05px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 1000px;
+    text-transform: uppercase;
+    transition-duration: 0.3s;
+    font-size: 14px;
+    @media screen and (max-width: 1200px){
+        font-size: calc(14px/1.1);
+    }
+    @media screen and (max-width: 600px){
+        font-size: calc(14px/1.3);
+    }
+}
+.button:hover {
+    color: black;
+}

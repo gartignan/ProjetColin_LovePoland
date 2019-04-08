@@ -4,17 +4,20 @@ section#mainVille {
     position: relative;
     width: 100%;
     left: 0;
-    top: -316.5px;
+    top: -290px;
     height: auto;
-    h2 {
+    @media (max-width:1200px) and (max-height:940px) {
+        display: none;
+    }
+    p {
         text-align: center;
         color: #fff;
-        font-size: 18px;
         font-weight: 400;
-        line-height: 92.97px;
+        font-size: 18px;
     }
 
     div.cardContainer {
+        margin-top: 46px;
         justify-content: space-around;
         display: flex;
         flex-wrap: wrap;
@@ -22,30 +25,27 @@ section#mainVille {
         div.mainVille {
             transition-duration: 1s;
             background-color: rgb(180, 169, 169);
-            width: 371px;
-            height: 433px;
+            width: 330px;
+            height: 430px;
             display: flex;
             justify-content: flex-end;
             align-items: center;
             flex-direction: column;
             text-align: center;
             background-size: cover;
-            background: url("./../img/Sopot.png");
             margin-right: 10px;
             margin-left: 10px;
             transition-duration: 1s;
-
             div.element {
                 h3 {
                     color: #fff;
                     opacity: 0.9;
                     color: #ffffff;
-                    //font-family: Montserrat;
-                    font-size: 30px;
                     font-weight: 700;
                 }
 
                 p {
+                    width: 100%;
                     margin-top: 5px;
                     margin-bottom: 64px;
                     color: $yellow;
@@ -56,7 +56,6 @@ section#mainVille {
 
             button {
                 height: 0;
-                //opacity: 0;
                 visibility: hidden;
                 margin: 5px;
             }
@@ -66,7 +65,6 @@ section#mainVille {
 
         div.mainVille:hover {
             div.element {
-                //transition-duration: 1s; not working :(
                 height: 50%;
 
                 h3 {
@@ -74,6 +72,12 @@ section#mainVille {
                     font-size: 48px;
                     font-weight: 700;
                     line-height: 92px;
+                    @media screen and (max-width: 1200px){
+                        font-size: calc(48px/1.1);
+                    }
+                    @media screen and (max-width: 600px){
+                        font-size: calc(48px/1.5);
+                    }
                 }
 
                 p {
@@ -93,8 +97,10 @@ section#mainVille {
 }
 
 section#secondaryVilles {
-    margin-top: -257.5px !important;
-
+    margin-top: -220px !important;
+    @media screen and (max-width: 1200px){
+        margin-top: 59px !important;
+    }
 
     div.search {
         display: flex;
@@ -107,29 +113,45 @@ section#secondaryVilles {
             color: $font-normal;
             font-size: 30px;
             font-weight: 700;
-            line-height: 92px;
+            //line-height: 92px;
             letter-spacing: 0.75px;
         }
 
         input#search {
-
+            margin-top: 56px;
             border-radius: 1000px !important;
             font-size: 25px;
             border: none;
             width: 100%;
             height: 59px;
             box-shadow: 0 0 85px rgba(141, 148, 169, 0.212);
+            @media screen and (max-width: 1200px){
+                margin-top: calc(56px/1.1);
+            }
+            @media screen and (max-width: 600px){
+                margin-top: calc(56px/1.5);
+            }
         }
         .input-group {
             margin-bottom: 0 !important;
         }
 
         .input-group-text {
+            position: absolute;
             border: none;
             margin-left: -50px;
             z-index: 1;
             background-color: #00000000;
             transition-duration: 0.3s;
+            top: 56px;
+            height: 59px;
+            bottom: 10px;
+            @media screen and (max-width: 1200px){
+                top: calc(56px/1.1);
+            }
+            @media screen and (max-width: 600px){
+                top: calc(56px/1.5);
+            }
         }
 
         .input-group-text:hover {
@@ -152,12 +174,31 @@ section#secondaryVilles {
             width: 100%;
             display: flex;
             margin-top: 20px;
+            @media screen and (max-width: 785px){
+                flex-wrap: wrap;
+                .right {
+                    width: 100%;
+                    margin-left: 0 !important;
+                }
+                .left {
+                    width: 100px;
+                    justify-content: flex-start !important;
+                    margin-top: 10px;
+                    margin-left: 0;
+                    margin-right: 0;
 
+                    .button {
+                        margin-left: 0 !important;
+                        margin-right: 10px;
+                    }
+                }
+            }
             .right {
                 display: flex;
                 justify-content: flex-start;
                 width: 50%;
                 margin-left: 4px;
+                
                 .button {
                     background-color: $background-grey;
                     color: #fff;
@@ -197,16 +238,23 @@ section#secondaryVilles {
 
     div.villes {
         margin-top: 32px;
-
+        #notFound {
+            text-align: center;
+            color: $font-normal;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            letter-spacing: 0.75px;
+            width: 100%;
+        }
         .secondaryVille {
             display: flex;
             align-items: center;
             flex-direction: column;
             margin-bottom: 30px;
             width: 100%;
-            height: 350px;
+            height: auto;
             box-shadow: 0 0 85px #8d94a926;
-
             img {
                 border-radius: 5px;
                 margin: 10px 10px 0px;
@@ -217,11 +265,20 @@ section#secondaryVilles {
                 text-align: center;
             }
 
-            h5 {
+            .title {
                 margin-top: 29px;
                 font-size: 30px;
                 color: $font-normal;
                 margin-bottom: 0;
+                @media screen and (max-width: 1200px){
+                    margin-top: calc(29px/2);
+                    font-size: calc(30px/1.1);
+                }
+                @media screen and (max-width: 600px){
+                    margin-top: calc(29px/4);
+                    font-size: calc(30px/1.5);
+                }
+    
             }
 
             p {
@@ -232,6 +289,7 @@ section#secondaryVilles {
             }
 
             .button {
+                margin-bottom: 30px;
                 color: $background-grey;
                 background-color: #fff;
                 margin-top: 10px;
@@ -254,7 +312,6 @@ section#description {
         text-shadow: 0 0 125px rgba(141, 148, 169, 0.25);
         font-weight: 700;
         position: absolute;
-        
         right: 0;
         width: 50%;
         font-size: 150px;
@@ -277,7 +334,7 @@ section#description {
     }
     div#desciptionTxt {
         margin-top: 46px;
-        h4 {
+        .title {
             text-align: unset;
             padding: 0;
             margin-top: 0;
@@ -285,6 +342,7 @@ section#description {
             font-weight: 700;
             letter-spacing: 0.36px;
             color: #f8c759;
+            width: auto;
         }
         p {
             color: $font-normal;
@@ -300,16 +358,21 @@ section#description {
     }
     div#imgShow {
         img {
-            z-index: 1;
             width: 100%;
+            @media screen and (max-width: 768px){
+                margin-top: 30px;
+            }
         }
         div#border {
-            border: 10px solid $yellow;
+            border: 10px solid #ffc64ab6;
             position: absolute;
-            height: 100%;
-            top: 10%;
-            left: 10%;
+            height: calc(100% - 10px);
             width: calc(100% - 10px);
+            top: 10%;
+            left: 11%;
+            @media screen and (max-width: 1300px){
+                display: none;
+            }
         }
     }
 }
@@ -329,6 +392,12 @@ section#enjoy {
         font-size: 92px;
         font-weight: 700;
         color: #fff;
+        @media screen and (max-width: 1200px){
+            font-size: calc(92px/1.5);
+        }
+        @media screen and (max-width: 600px){
+            font-size: calc(92px/2.5);
+        }
     }
 
     p {
@@ -336,7 +405,14 @@ section#enjoy {
         font-weight: 400;
         margin-top: 31px;
         //line-height: 94.54px;
+        margin-bottom: 0;
         color: #fff;
+        @media screen and (max-width: 1200px){
+            margin-top: calc(48px/2);
+        }
+        @media screen and (max-width: 600px){
+            margin-top: calc(48px/4);
+        }
     }
 
     span {
@@ -347,6 +423,12 @@ section#enjoy {
 
     .button {
         margin-top: 48px;
+        @media screen and (max-width: 1200px){
+            margin-top: calc(48px/2);
+        }
+        @media screen and (max-width: 600px){
+            margin-top: calc(48px/4);
+        }
     }
 }
 
@@ -381,5 +463,11 @@ section#right {
         text-transform: uppercase;
         color: #e9e9e9;
         user-select: none;
+        @media screen and (max-width: 1270px){
+            font-size: calc(305px/2);
+        }
+        @media screen and (max-width: 650px){
+            font-size: calc(305px/4);
+        }
     }
 }

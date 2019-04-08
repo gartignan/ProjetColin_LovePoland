@@ -1,0 +1,312 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# nice
+
+send some nice info
+
+## info Collection [/everything]
+
+### ville [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+        "h1": "fall in love <span>with Poland</span>",
+        "titleDes":"best way to find your perfect pace in Poland",
+        "MainVilles": [
+            {
+                "name": "Sandomierz",
+                "originalName": "Swietokrzyskie",
+                "description": "lorem ipsum etc.....",
+                "img" : [
+                    {
+                        "src": "https://farm1.staticflickr.com/610/23210563209_d584b40211_o.jpg",
+                        "imgDescription": "Swietokrzyskie"
+                    },
+                    {
+                        "src": "...",
+                        "imgDescription": "Swietokrzyskie"
+                    }
+                ],
+                "offers" : {
+                    "hotel" :[
+                        {
+                            "prixEuro" : 100,
+                            "hotelName" : "Athena Hotel"
+                        }
+                    ]
+                }
+            }, {
+                "name": "Zakopane",
+                "originalName": "Małopolski",
+                "description": "lorem ipsum etc.....",
+                "img" : [
+                    {
+                        "src": "...",
+                        "imgDescription": "what a nice img !!!"
+                    },
+                    {
+                        "src": "...",
+                        "imgDescription": "lorem ipsum !!!"
+                    }
+                ],
+                "offers" : {
+                    "hotel" :[
+                        {
+                            "prixEuro" : 100,
+                            "hotelName" : "AthenaHotel"
+                        }
+                    ]
+                }
+            }, {
+                "name": "Sopot",
+                "originalName": "Pomorskie",
+                "description": "lorem ipsum etc.....",
+                "img" : [
+                    {
+                        "src": "...",
+                        "imgDescription": "what a nice img !!!"
+                    },
+                    {
+                        "src": "...",
+                        "imgDescription": "lorem ipsum !!!"
+                    }
+                ],
+                "offers" : {
+                    "hotel" :[
+                        {
+                            "prixEuro" : 100,
+                            "hotelName" : "AthenaHotel"
+                        }
+                    ]
+                }
+            }
+        ],
+        "SecondaryVilles" : [
+            {
+                "name": "Pozman",
+                "originalName": "colin tixier pere",
+                "description": "lorem ipsum etc.....",
+                "img" : [
+                    {
+                        "src": "./img/pozman.png",
+                        "imgDescription": "pozman"
+                    },
+                    {
+                        "src": "./img/pozman.png",
+                        "imgDescription": "lorem ipsum !!!"
+                    }
+                ],
+                "offers" : {
+                    "hotel" :[
+                        {
+                            "prixEuro" : 100,
+                            "hotelName" : "AthenaHotel"
+                        }
+                    ]
+                }
+            }, {
+                "name": "Warsaw",
+                "originalName": "...",
+                "description": "lorem ipsum etc.....",
+                "img" : [
+                    {
+                        "src": "./img/pozman.png",
+                        "imgDescription": "what a nice img !!!"
+                    },
+                    {
+                        "src": "./img/pozman.png",
+                        "imgDescription": "lorem ipsum !!!"
+                    }
+                ],
+                "offers" : {
+                    "hotel" :[
+                        {
+                            "prixEuro" : 100,
+                            "hotelName" : "AthenaHotel"
+                        }
+                    ]
+                }
+            }, {
+                "name": "Sopot",
+                "originalName": "...",
+                "description": "lorem ipsum etc.....",
+                "img" : [
+                    {
+                        "src": "./img/pozman.png",
+                        "imgDescription": "what a nice img !!!"
+                    },
+                    {
+                        "src": "...",
+                        "imgDescription": "lorem ipsum !!!"
+                    }
+                ],
+                "offers" : {
+                    "hotel" :[
+                        {
+                            "prixEuro" : 100,
+                            "hotelName" : "AthenaHotel"
+                        }
+                    ]
+                }
+            }, {
+                "name": "Wroclaw",
+                "originalName": "...",
+                "description": "lorem ipsum etc.....",
+                "img" : [
+                    {
+                        "src": "./img/pozman.png",
+                        "imgDescription": "what a nice img !!!"
+                    },
+                    {
+                        "src": "...",
+                        "imgDescription": "lorem ipsum !!!"
+                    }
+                ],
+                "offers" : {
+                    "hotel" :[
+                        {
+                            "prixEuro" : 100,
+                            "hotelName" : "AthenaHotel"
+                        }
+                    ]
+                }
+            }, {
+                "name": "Karpacz",
+                "originalName": "...",
+                "description": "lorem ipsum etc.....",
+                "img" : [
+                    {
+                        "src": "./img/pozman.png",
+                        "imgDescription": "what a nice img !!!"
+                    },
+                    {
+                        "src": "...",
+                        "imgDescription": "lorem ipsum !!!"
+                    }
+                ],
+                "offers" : {
+                    "hotel" :[
+                        {
+                            "prixEuro" : 100,
+                            "hotelName" : "AthenaHotel"
+                        }
+                    ]
+                }
+            }, {
+                "name": "Dolina Oclzyska",
+                "originalName": "...",
+                "description": "lorem ipsum etc.....",
+                "img" : [
+                    {
+                        "src": "./img/pozman.png",
+                        "imgDescription": "what a nice img !!!"
+                    },
+                    {
+                        "src": "...",
+                        "imgDescription": "lorem ipsum !!!"
+                    }
+                ],
+                "offers" : {
+                    "hotel" :[
+                        {
+                            "prixEuro" : 100,
+                            "hotelName" : "AthenaHotel"
+                        }
+                    ]
+                }
+            }, {
+                "name": "Kozy",
+                "originalName": "...",
+                "description": "lorem ipsum etc.....",
+                "img" : [
+                    {
+                        "src": "./img/pozman.png",
+                        "imgDescription": "what a nice img !!!"
+                    },
+                    {
+                        "src": "...",
+                        "imgDescription": "lorem ipsum !!!"
+                    }
+                ],
+                "offers" : {
+                    "hotel" :[
+                        {
+                            "prixEuro" : 100,
+                            "hotelName" : "AthenaHotel"
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Sandomierz",
+                "originalName": "Swietokrzyskie",
+                "description": "lorem ipsum etc.....",
+                "img" : [
+                    {
+                        "src": "https://farm1.staticflickr.com/610/23210563209_d584b40211_o.jpg",
+                        "imgDescription": "Swietokrzyskie"
+                    },
+                    {
+                        "src": "...",
+                        "imgDescription": "Swietokrzyskie"
+                    }
+                ],
+                "offers" : {
+                    "hotel" :[
+                        {
+                            "prixEuro" : 100,
+                            "hotelName" : "Athena Hotel"
+                        }
+                    ]
+                }
+            }, {
+                "name": "Zakopane",
+                "originalName": "Małopolski",
+                "description": "lorem ipsum etc.....",
+                "img" : [
+                    {
+                        "src": "...",
+                        "imgDescription": "what a nice img !!!"
+                    },
+                    {
+                        "src": "...",
+                        "imgDescription": "lorem ipsum !!!"
+                    }
+                ],
+                "offers" : {
+                    "hotel" :[
+                        {
+                            "prixEuro" : 100,
+                            "hotelName" : "AthenaHotel"
+                        }
+                    ]
+                }
+            }, {
+                "name": "Sopot",
+                "originalName": "Pomorskie",
+                "description": "lorem ipsum etc.....",
+                "img" : [
+                    {
+                        "src": "...",
+                        "imgDescription": "what a nice img !!!"
+                    },
+                    {
+                        "src": "...",
+                        "imgDescription": "lorem ipsum !!!"
+                    }
+                ],
+                "offers" : {
+                    "hotel" :[
+                        {
+                            "prixEuro" : 100,
+                            "hotelName" : "AthenaHotel"
+                        }
+                    ]
+                }
+            
+        ]
+            }
+        ]

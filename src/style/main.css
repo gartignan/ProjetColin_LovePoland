@@ -1,3 +1,70 @@
+h1 {
+  font-size: 92px;
+}
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: calc(92px/1.1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: calc(92px/1.5);
+  }
+}
+
+h3 {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  h3 {
+    font-size: calc(30px/1.1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h3 {
+    font-size: calc(30px/1.5);
+  }
+}
+
+.button {
+  cursor: pointer;
+  text-align: center;
+  margin-top: 51px;
+  background-color: #ffc74a;
+  color: #b98000;
+  border: none;
+  letter-spacing: 1.05px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 1000px;
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+  .button {
+    font-size: calc(14px/1.1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    font-size: calc(14px/1.3);
+  }
+}
+
+.button:hover {
+  color: black;
+}
+
 header {
   height: 100%;
   background-size: cover;
@@ -24,14 +91,18 @@ header .filter div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: -200px;
+  margin-top: -250px;
+}
+
+@media screen and (max-width: 1200px) {
+  header .filter div {
+    margin-top: 0;
+  }
 }
 
 header .filter div h1 {
   text-align: center;
-  font-size: 92px;
   font-weight: 700;
-  line-height: 92px;
   color: #fff;
 }
 
@@ -41,10 +112,23 @@ header .filter div h1 span {
 }
 
 header .filter div p {
+  text-align: center;
   margin-top: 33px;
   font-size: 18px;
   color: #fff;
   opacity: 0.6;
+}
+
+@media screen and (max-width: 1200px) {
+  header .filter div p {
+    margin-top: calc(33px/1.1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header .filter div p {
+    margin-top: calc(33px/1.5);
+  }
 }
 
 nav {
@@ -70,19 +154,25 @@ section#mainVille {
   position: relative;
   width: 100%;
   left: 0;
-  top: -316.5px;
+  top: -290px;
   height: auto;
 }
 
-section#mainVille h2 {
+@media (max-width: 1200px) and (max-height: 940px) {
+  section#mainVille {
+    display: none;
+  }
+}
+
+section#mainVille p {
   text-align: center;
   color: #fff;
-  font-size: 18px;
   font-weight: 400;
-  line-height: 92.97px;
+  font-size: 18px;
 }
 
 section#mainVille div.cardContainer {
+  margin-top: 46px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   display: -webkit-box;
@@ -96,8 +186,8 @@ section#mainVille div.cardContainer div.mainVille {
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   background-color: #b4a9a9;
-  width: 371px;
-  height: 433px;
+  width: 330px;
+  height: 430px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,7 +203,6 @@ section#mainVille div.cardContainer div.mainVille {
           flex-direction: column;
   text-align: center;
   background-size: cover;
-  background: url("./../img/Sopot.png");
   margin-right: 10px;
   margin-left: 10px;
   transition-duration: 1s;
@@ -123,11 +212,11 @@ section#mainVille div.cardContainer div.mainVille div.element h3 {
   color: #fff;
   opacity: 0.9;
   color: #ffffff;
-  font-size: 30px;
   font-weight: 700;
 }
 
 section#mainVille div.cardContainer div.mainVille div.element p {
+  width: 100%;
   margin-top: 5px;
   margin-bottom: 64px;
   color: #ffc74a;
@@ -152,6 +241,18 @@ section#mainVille div.cardContainer div.mainVille:hover div.element h3 {
   line-height: 92px;
 }
 
+@media screen and (max-width: 1200px) {
+  section#mainVille div.cardContainer div.mainVille:hover div.element h3 {
+    font-size: calc(48px/1.1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section#mainVille div.cardContainer div.mainVille:hover div.element h3 {
+    font-size: calc(48px/1.5);
+  }
+}
+
 section#mainVille div.cardContainer div.mainVille:hover div.element p {
   color: #fff;
   margin-top: -18px;
@@ -165,7 +266,13 @@ section#mainVille div.cardContainer div.mainVille:hover button {
 }
 
 section#secondaryVilles {
-  margin-top: -257.5px !important;
+  margin-top: -220px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  section#secondaryVilles {
+    margin-top: 59px !important;
+  }
 }
 
 section#secondaryVilles div.search {
@@ -186,11 +293,11 @@ section#secondaryVilles div.search h4 {
   color: #606f81;
   font-size: 30px;
   font-weight: 700;
-  line-height: 92px;
   letter-spacing: 0.75px;
 }
 
 section#secondaryVilles div.search input#search {
+  margin-top: 56px;
   border-radius: 1000px !important;
   font-size: 25px;
   border: none;
@@ -200,17 +307,45 @@ section#secondaryVilles div.search input#search {
           box-shadow: 0 0 85px rgba(141, 148, 169, 0.212);
 }
 
+@media screen and (max-width: 1200px) {
+  section#secondaryVilles div.search input#search {
+    margin-top: calc(56px/1.1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section#secondaryVilles div.search input#search {
+    margin-top: calc(56px/1.5);
+  }
+}
+
 section#secondaryVilles div.search .input-group {
   margin-bottom: 0 !important;
 }
 
 section#secondaryVilles div.search .input-group-text {
+  position: absolute;
   border: none;
   margin-left: -50px;
   z-index: 1;
   background-color: #00000000;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+  top: 56px;
+  height: 59px;
+  bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  section#secondaryVilles div.search .input-group-text {
+    top: calc(56px/1.1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section#secondaryVilles div.search .input-group-text {
+    top: calc(56px/1.5);
+  }
 }
 
 section#secondaryVilles div.search .input-group-text:hover {
@@ -235,6 +370,30 @@ section#secondaryVilles div.search .rowButton {
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 785px) {
+  section#secondaryVilles div.search .rowButton {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section#secondaryVilles div.search .rowButton .right {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+  section#secondaryVilles div.search .rowButton .left {
+    width: 100px;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  section#secondaryVilles div.search .rowButton .left .button {
+    margin-left: 0 !important;
+    margin-right: 10px;
+  }
 }
 
 section#secondaryVilles div.search .rowButton .right {
@@ -290,6 +449,16 @@ section#secondaryVilles div.villes {
   margin-top: 32px;
 }
 
+section#secondaryVilles div.villes #notFound {
+  text-align: center;
+  color: #606f81;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 0.75px;
+  width: 100%;
+}
+
 section#secondaryVilles div.villes .secondaryVille {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,7 +472,7 @@ section#secondaryVilles div.villes .secondaryVille {
           flex-direction: column;
   margin-bottom: 30px;
   width: 100%;
-  height: 350px;
+  height: auto;
   -webkit-box-shadow: 0 0 85px #8d94a926;
           box-shadow: 0 0 85px #8d94a926;
 }
@@ -318,11 +487,25 @@ section#secondaryVilles div.villes .secondaryVille * {
   text-align: center;
 }
 
-section#secondaryVilles div.villes .secondaryVille h5 {
+section#secondaryVilles div.villes .secondaryVille .title {
   margin-top: 29px;
   font-size: 30px;
   color: #606f81;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  section#secondaryVilles div.villes .secondaryVille .title {
+    margin-top: calc(29px/2);
+    font-size: calc(30px/1.1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section#secondaryVilles div.villes .secondaryVille .title {
+    margin-top: calc(29px/4);
+    font-size: calc(30px/1.5);
+  }
 }
 
 section#secondaryVilles div.villes .secondaryVille p {
@@ -333,6 +516,7 @@ section#secondaryVilles div.villes .secondaryVille p {
 }
 
 section#secondaryVilles div.villes .secondaryVille .button {
+  margin-bottom: 30px;
   color: #bdc8d9;
   background-color: #fff;
   margin-top: 10px;
@@ -384,7 +568,7 @@ section#description div#desciptionTxt {
   margin-top: 46px;
 }
 
-section#description div#desciptionTxt h4 {
+section#description div#desciptionTxt .title {
   text-align: unset;
   padding: 0;
   margin-top: 0;
@@ -392,6 +576,7 @@ section#description div#desciptionTxt h4 {
   font-weight: 700;
   letter-spacing: 0.36px;
   color: #f8c759;
+  width: auto;
 }
 
 section#description div#desciptionTxt p {
@@ -408,17 +593,28 @@ section#description div#desciptionTxt button.button {
 }
 
 section#description div#imgShow img {
-  z-index: 1;
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  section#description div#imgShow img {
+    margin-top: 30px;
+  }
+}
+
 section#description div#imgShow div#border {
-  border: 10px solid #ffc74a;
+  border: 10px solid #ffc64ab6;
   position: absolute;
-  height: 100%;
-  top: 10%;
-  left: 10%;
+  height: calc(100% - 10px);
   width: calc(100% - 10px);
+  top: 10%;
+  left: 11%;
+}
+
+@media screen and (max-width: 1300px) {
+  section#description div#imgShow div#border {
+    display: none;
+  }
 }
 
 section#enjoy {
@@ -448,11 +644,36 @@ section#enjoy h5 {
   color: #fff;
 }
 
+@media screen and (max-width: 1200px) {
+  section#enjoy h5 {
+    font-size: calc(92px/1.5);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section#enjoy h5 {
+    font-size: calc(92px/2.5);
+  }
+}
+
 section#enjoy p {
   font-size: 18px;
   font-weight: 400;
   margin-top: 31px;
+  margin-bottom: 0;
   color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  section#enjoy p {
+    margin-top: calc(48px/2);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section#enjoy p {
+    margin-top: calc(48px/4);
+  }
 }
 
 section#enjoy span {
@@ -463,6 +684,18 @@ section#enjoy span {
 
 section#enjoy .button {
   margin-top: 48px;
+}
+
+@media screen and (max-width: 1200px) {
+  section#enjoy .button {
+    margin-top: calc(48px/2);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section#enjoy .button {
+    margin-top: calc(48px/4);
+  }
 }
 
 section#right {
@@ -513,11 +746,22 @@ section#right p#back {
           user-select: none;
 }
 
+@media screen and (max-width: 1270px) {
+  section#right p#back {
+    font-size: calc(305px/2);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  section#right p#back {
+    font-size: calc(305px/4);
+  }
+}
+
 #gridNice {
   width: 30px;
   height: 100%;
   position: fixed;
-  background-color: rgba(255, 0, 0, 0.582);
   top: 0;
   left: 50%;
   right: 50%;
@@ -538,28 +782,6 @@ section#right p#back {
 html,
 body {
   height: 100%;
-}
-
-.button {
-  cursor: pointer;
-  text-align: center;
-  margin-top: 51px;
-  background-color: #ffc74a;
-  color: #b98000;
-  border: none;
-  letter-spacing: 1.05px;
-  padding-left: 30px !important;
-  padding-right: 30px !important;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
-  border-radius: 1000px !important;
-  text-transform: uppercase;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-}
-
-.button:hover {
-  color: black;
 }
 
 .filter {
