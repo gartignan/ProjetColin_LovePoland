@@ -6,7 +6,10 @@ section#mainVille {
     left: 0;
     top: -290px;
     height: auto;
-    @media (max-width:1200px) and (max-height:1000px) {
+    @media screen and (max-width: 1200px){
+        display: none;
+    }
+    @media screen and (max-height: 750px){
         display: none;
     }
     p {
@@ -100,6 +103,9 @@ section#mainVille {
 section#secondaryVilles {
     margin-top: -220px !important;
     @media screen and (max-width: 1200px){
+        margin-top: 59px !important;
+    }
+    @media screen and (max-height: 750px){
         margin-top: 59px !important;
     }
 
