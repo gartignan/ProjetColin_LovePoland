@@ -1,4 +1,40 @@
-var allSecondary = [];
+$(window).load(function() {
+  var allSecondary = [];
+  connect("https://private-45821-colintixier.apiary-mock.com/everything");
+
+  // VVV event listener VVV
+
+  document.getElementById("fr").addEventListener("click", function () {
+    connect("https://private-504e1-franceversion.apiary-mock.com/everything");
+  });
+  document.getElementById("po").addEventListener("click", function () {
+    connect("https://private-45821-colintixier.apiary-mock.com/everything");
+  });
+
+  var toggle = false;
+  document.getElementsByClassName("navbar-toggler")[0].addEventListener("click", function () {
+    if (!toggle) {
+      document.querySelector("nav").style.backgroundColor = "#343a40";
+      toggle = true;
+    } else {
+      document.querySelector("nav").style.backgroundColor = "#00000000";
+      toggle = false;
+    }
+  });
+});
+
+
+////////////////////////////////////////////////////////
+
+document.getElementById("search").addEventListener('input', function () {
+  var searchResult = [];
+  for (i in allSecondary) {
+    if (allSecondary[i].name.includes(this.value.toLowerCase())) {
+      searchResult.push(allSecondary[i]);
+    }
+  }
+  whenutrytohard(searchResult);
+});
 
 function whenutrytohard(array) {
   document.querySelector("#secondaryVilles>.villes").innerHTML = "";
@@ -18,7 +54,8 @@ function whenutrytohard(array) {
   }
 }
 
-function connect(apiurl){
+function connect(apiurl) {
+  console.log("log to", apiurl)
   document.querySelector("#mainVille>div").innerHTML = "";
   var url = apiurl;
   var request = new XMLHttpRequest();
@@ -43,35 +80,3 @@ function connect(apiurl){
     allSecondary = data.SecondaryVilles;
   }
 }
-
-connect("https://private-45821-colintixier.apiary-mock.com/everything");
-
-// VVV event listener VVV
-
-document.getElementById("fr").addEventListener("click", function(){
-  connect("https://private-504e1-franceversion.apiary-mock.com/everything");
-});
-document.getElementById("po").addEventListener("click", function(){
-  connect("https://private-45821-colintixier.apiary-mock.com/everything");
-})
-
-var toggle = false;
-document.getElementsByClassName("navbar-toggler")[0].addEventListener("click", function () {
-  if (!toggle) {
-    document.querySelector("nav").style.backgroundColor = "#343a40";
-    toggle = true;
-  } else {
-    document.querySelector("nav").style.backgroundColor = "#00000000";
-    toggle = false;
-  }
-});
-
-document.getElementById("search").addEventListener('input', function () {
-  var searchResult = [];
-  for (i in allSecondary) {
-    if (allSecondary[i].name.includes(this.value.toLowerCase())) {
-      searchResult.push(allSecondary[i]);
-    }
-  }
-  whenutrytohard(searchResult);
-});
