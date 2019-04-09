@@ -27,8 +27,10 @@ function connect(apiurl){
   request.send();
   request.onload = function () {
     var data = request.response[0];
+    document.querySelector("header").style.backgroundImage = "url('" + data.mainimg + "')";
     document.querySelector("header>.filter>div>h1").innerHTML = data.h1;
     document.querySelector("header>.filter>div>p").innerHTML = data.titleDes;
+
     for (i in data.MainVilles) {
       let card = document.createElement("DIV");
       data.MainVilles[i].name = data.MainVilles[i].name.toLowerCase();

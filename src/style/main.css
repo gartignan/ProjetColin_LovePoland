@@ -1,3 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+* *::first-letter {
+  text-transform: uppercase;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.filter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #000000bb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 h1 {
   font-size: 92px;
 }
@@ -70,7 +106,6 @@ header {
   height: 100%;
   background-size: cover !important;
   background-repeat: no-repeat !important;
-  background: url("./../img/fond.png");
   background-attachment: fixed;
   padding: 10px;
 }
@@ -804,52 +839,5 @@ section#right p#back {
   section#right p#back {
     font-size: calc(305px/4);
   }
-}
-
-#gridNice {
-  width: 30px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  right: 50%;
-  z-index: 99999999;
-  margin-left: -15px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-}
-
-* *::first-letter {
-  text-transform: uppercase;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-.filter {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-color: #000000bb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 /*# sourceMappingURL=main.css.map */

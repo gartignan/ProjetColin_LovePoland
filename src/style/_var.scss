@@ -7,6 +7,33 @@ $font-normal: #606f81;
 $background-grey: #bdc8d9;
 $grey-button: #8d97a5;
 
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    *::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.filter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #000000bb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 // titre v //
 h1 {
     font-size: 92px;
@@ -56,3 +83,4 @@ h3 {
 .button:hover {
     color: black;
 }
+
