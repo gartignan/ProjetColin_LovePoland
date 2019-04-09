@@ -115,6 +115,7 @@ header .filter {
 }
 
 header .filter div {
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

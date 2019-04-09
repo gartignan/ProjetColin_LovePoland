@@ -4,13 +4,13 @@ header {
     height: 100%;
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    //background: url("./../img/fond.png");
     background-attachment: fixed;
     padding: 10px;
 
     .filter {
         height: 100%;
         div {
+            padding: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
