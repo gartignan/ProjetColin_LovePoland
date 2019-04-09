@@ -45,17 +45,6 @@ h1 {
     }
 }
 
-h3 {
-    font-size: 30px;
-    @media screen and (max-width: 1200px){
-        font-size: calc(30px/1.1);
-    }
-    @media screen and (max-width: 600px){
-        font-size: calc(30px/1.5);
-    }
-    
-}
-
 .button {
     cursor: pointer;
     text-align: center;
