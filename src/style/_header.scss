@@ -44,6 +44,14 @@ header {
                     margin-top: calc(33px/1.5);
                 }
             }
+            .button {
+                @media screen and (max-height: 400px){
+                    margin-top: calc(51px/1.5);
+                }
+                @media screen and (max-height: 400px){
+                    margin-top: 0;
+                }
+            }
         }
     }
 }
