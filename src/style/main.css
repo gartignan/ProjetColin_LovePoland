@@ -608,20 +608,36 @@ section#description {
   min-height: 50%;
 }
 
-section#description #textIntheBack {
+section#description #backtxt {
+  z-index: 0;
   text-shadow: 0 0 125px rgba(141, 148, 169, 0.25);
   font-weight: 700;
   position: absolute;
   right: 0;
-  width: 50%;
-  font-size: 150px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-top: -80px;
+  width: 45%;
+  text-shadow: 0 0 125px rgba(141, 148, 169, 0.25);
+  font-family: Montserrat;
+  font-size: 210px;
+  font-weight: 700;
   word-break: break-all;
   text-align: right;
   text-transform: uppercase;
+  color: #e4e4e4;
+}
+
+@media screen and (max-width: 1200px) {
+  section#description #backtxt {
+    display: none;
+  }
 }
 
 section#description h4 {
-  z-index: 1;
+  z-index: 2;
   text-align: center;
   padding-top: 71px;
   color: #606f81;

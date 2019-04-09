@@ -1,26 +1,24 @@
-$(window).load(function() {
-  var allSecondary = [];
+var allSecondary = [];
+connect("https://private-45821-colintixier.apiary-mock.com/everything");
+
+// VVV event listener VVV
+
+document.getElementById("fr").addEventListener("click", function () {
+  connect("https://private-504e1-franceversion.apiary-mock.com/everything");
+});
+document.getElementById("po").addEventListener("click", function () {
   connect("https://private-45821-colintixier.apiary-mock.com/everything");
+});
 
-  // VVV event listener VVV
-
-  document.getElementById("fr").addEventListener("click", function () {
-    connect("https://private-504e1-franceversion.apiary-mock.com/everything");
-  });
-  document.getElementById("po").addEventListener("click", function () {
-    connect("https://private-45821-colintixier.apiary-mock.com/everything");
-  });
-
-  var toggle = false;
-  document.getElementsByClassName("navbar-toggler")[0].addEventListener("click", function () {
-    if (!toggle) {
-      document.querySelector("nav").style.backgroundColor = "#343a40";
-      toggle = true;
-    } else {
-      document.querySelector("nav").style.backgroundColor = "#00000000";
-      toggle = false;
-    }
-  });
+var toggle = false;
+document.getElementsByClassName("navbar-toggler")[0].addEventListener("click", function () {
+  if (!toggle) {
+    document.querySelector("nav").style.backgroundColor = "#343a40";
+    toggle = true;
+  } else {
+    document.querySelector("nav").style.backgroundColor = "#00000000";
+    toggle = false;
+  }
 });
 
 
