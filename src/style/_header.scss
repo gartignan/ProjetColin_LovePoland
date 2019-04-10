@@ -5,10 +5,10 @@ header {
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed;
-    padding: 10px;
 
     .filter {
         height: 100%;
+
         div {
             padding: 10px;
             display: flex;
@@ -16,10 +16,12 @@ header {
             align-items: center;
             flex-direction: column;
             margin-top: -230px;
-            @media screen and (max-width: 1200px){
+
+            @media screen and (max-width: 1200px) {
                 margin-top: 0;
             }
-            @media screen and (max-height: 750px){
+
+            @media screen and (max-height: 750px) {
                 margin-top: 0;
             }
 
@@ -40,18 +42,22 @@ header {
                 font-size: 18px;
                 color: #fff;
                 opacity: 0.6;
-                @media screen and (max-width: 1200px){
+
+                @media screen and (max-width: 1200px) {
                     margin-top: calc(33px/1.1);
                 }
-                @media screen and (max-width: 600px){
+
+                @media screen and (max-width: 600px) {
                     margin-top: calc(33px/1.5);
                 }
             }
+
             .button {
-                @media screen and (max-height: 400px){
+                @media screen and (max-height: 400px) {
                     margin-top: calc(51px/1.5);
                 }
-                @media screen and (max-height: 400px){
+
+                @media screen and (max-height: 400px) {
                     margin-top: 0;
                 }
             }

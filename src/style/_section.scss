@@ -113,10 +113,6 @@ section#secondaryVilles {
         margin-top: 59px !important;
     }
 
-    @media screen and (max-height: 750px) {
-        margin-top: 59px !important;
-    }
-
     div.search {
         display: flex;
         flex-direction: column;
@@ -359,7 +355,7 @@ section#description {
         position: absolute;
         right: 0;
         user-select: none;
-        margin-top : -80px;
+        margin-top: -80px;
         width: 45%;
         text-shadow: 0 0 125px rgba(141, 148, 169, 0.25);
         font-family: Montserrat;
@@ -369,7 +365,8 @@ section#description {
         text-align: right;
         text-transform: uppercase;
         color: #e4e4e4;
-        @media screen and (max-width: 1200px) {
+
+        @media screen and (max-width: 1250px) {
             display: none;
         }
     }
@@ -452,43 +449,57 @@ section#description {
 
 section#enjoy {
     text-align: center;
-    height: 60%;
     background-image: url("./../img/Photo.png");
     background-size: cover;
     display: flex;
+    height: 60%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
     padding: 10px;
 
-    h5 {
-        font-size: 92px;
-        font-weight: 700;
-        color: #fff;
-
-        @media screen and (max-width: 1200px) {
-            font-size: calc(92px/1.5);
-        }
-
-        @media screen and (max-width: 600px) {
-            font-size: calc(92px/2.5);
-        }
+    @media screen and (max-height: 371px) {
+        height: auto;
+        padding: 20px;
     }
 
-    p {
-        font-size: 18px;
-        font-weight: 400;
-        margin-top: 31px;
-        margin-bottom: 0;
-        color: #fff;
+    div {
+        //padding: 10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        @media screen and (max-width: 1200px) {
-            margin-top: calc(48px/2);
+        h5 {
+            font-size: 92px;
+            font-weight: 700;
+            color: #fff;
+
+            @media screen and (max-width: 1200px) {
+                font-size: calc(92px/1.5);
+            }
+
+            @media screen and (max-width: 600px) {
+                font-size: calc(92px/2.5);
+            }
         }
 
-        @media screen and (max-width: 600px) {
-            margin-top: calc(48px/4);
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 31px;
+            margin-bottom: 0;
+            color: #fff;
+
+            @media screen and (max-width: 1200px) {
+                margin-top: calc(48px/2);
+            }
+
+            @media screen and (max-width: 600px) {
+                margin-top: calc(48px/4);
+            }
         }
     }
 
@@ -522,6 +533,15 @@ section#right {
     align-items: center;
     padding: 10px;
 
+    @media screen and (max-height: 371px) {
+        height: auto;
+        padding: 20px;
+    }
+
+    * {
+        margin-bottom: 0 !important;
+    }
+
     img {
         z-index: 1;
     }
@@ -541,7 +561,6 @@ section#right {
         text-shadow: 0 0 125px rgba(141, 148, 169, 0.25);
         font-size: 305px;
         font-weight: 700;
-        line-height: 229.76px;
         text-transform: uppercase;
         color: #e9e9e9;
         user-select: none;
@@ -552,6 +571,10 @@ section#right {
 
         @media screen and (max-width: 650px) {
             font-size: calc(305px/4);
+        }
+
+        @media screen and (max-width: 315px) {
+            display: none;
         }
     }
 }
