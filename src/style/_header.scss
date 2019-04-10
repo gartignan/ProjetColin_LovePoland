@@ -6,6 +6,8 @@ header {
     background-repeat: no-repeat !important;
     background-attachment: fixed;
 
+    @media screen and (max-height: 400px) {}
+
     .filter {
         height: 100%;
 
@@ -16,6 +18,11 @@ header {
             align-items: center;
             flex-direction: column;
             margin-top: -230px;
+            height: 100%;
+
+            @media screen and (max-height: 400px) {
+                margin-bottom: 20px;
+            }
 
             @media screen and (max-width: 1200px) {
                 margin-top: 0;
@@ -50,13 +57,13 @@ header {
                 @media screen and (max-width: 600px) {
                     margin-top: calc(33px/1.5);
                 }
+
+                @media screen and (max-height: 350px) {
+                    display: none;
+                }
             }
 
             .button {
-                @media screen and (max-height: 400px) {
-                    margin-top: calc(51px/1.5);
-                }
-
                 @media screen and (max-height: 400px) {
                     margin-top: 0;
                 }

@@ -117,14 +117,12 @@ section#secondaryVilles {
         display: flex;
         flex-direction: column;
         align-items: center;
-        //text-align: center;
 
         h4 {
             text-align: center;
             color: $font-normal;
             font-size: 30px;
             font-weight: 700;
-            //line-height: 92px;
             letter-spacing: 0.75px;
         }
 
@@ -490,7 +488,6 @@ section#enjoy {
             font-size: 18px;
             font-weight: 400;
             margin-top: 31px;
-            margin-bottom: 0;
             color: #fff;
 
             @media screen and (max-width: 1200px) {

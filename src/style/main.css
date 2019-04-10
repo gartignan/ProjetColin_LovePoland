@@ -113,6 +113,13 @@ header .filter div {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: -230px;
+  height: 100%;
+}
+
+@media screen and (max-height: 400px) {
+  header .filter div {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -158,9 +165,9 @@ header .filter div p {
   }
 }
 
-@media screen and (max-height: 400px) {
-  header .filter div .button {
-    margin-top: calc(51px/1.5);
+@media screen and (max-height: 350px) {
+  header .filter div p {
+    display: none;
   }
 }
 
@@ -778,7 +785,6 @@ section#enjoy div p {
   font-size: 18px;
   font-weight: 400;
   margin-top: 31px;
-  margin-bottom: 0;
   color: #fff;
 }
 
