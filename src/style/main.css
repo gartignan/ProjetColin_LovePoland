@@ -327,6 +327,12 @@ section#secondaryVilles {
   }
 }
 
+@media screen and (max-height: 750px) {
+  section#secondaryVilles {
+    margin-top: 59px !important;
+  }
+}
+
 section#secondaryVilles div.search {
   display: -webkit-box;
   display: -ms-flexbox;

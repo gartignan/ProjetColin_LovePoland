@@ -112,6 +112,9 @@ section#secondaryVilles {
     @media screen and (max-width: 1200px) {
         margin-top: 59px !important;
     }
+    @media screen and (max-height: 750px) {
+        margin-top: 59px !important;
+    }
 
     div.search {
         display: flex;
