@@ -2,14 +2,25 @@
 
 header {
     height: 100%;
+    width: 100%;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed;
 
     @media screen and (max-height: 400px) {}
 
-    .filter {
+    #filter {
         height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: #000000bb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
         div {
             padding: 10px;

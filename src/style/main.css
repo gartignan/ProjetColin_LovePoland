@@ -13,27 +13,6 @@ body {
   height: 100%;
 }
 
-.filter {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-color: #000000bb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 h1 {
   font-size: 92px;
 }
@@ -88,16 +67,36 @@ h1 {
 
 header {
   height: 100%;
+  width: 100%;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-attachment: fixed;
 }
 
-header .filter {
+header #filter {
   height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #000000bb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-header .filter div {
+header #filter div {
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,35 +116,35 @@ header .filter div {
 }
 
 @media screen and (max-height: 400px) {
-  header .filter div {
+  header #filter div {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  header .filter div {
+  header #filter div {
     margin-top: 0;
   }
 }
 
 @media screen and (max-height: 750px) {
-  header .filter div {
+  header #filter div {
     margin-top: 0;
   }
 }
 
-header .filter div h1 {
+header #filter div h1 {
   text-align: center;
   font-weight: 700;
   color: #fff;
 }
 
-header .filter div h1 span {
+header #filter div h1 span {
   color: #ed6950;
   display: block;
 }
 
-header .filter div p {
+header #filter div p {
   text-align: center;
   margin-top: 33px;
   font-size: 18px;
@@ -154,25 +153,25 @@ header .filter div p {
 }
 
 @media screen and (max-width: 1200px) {
-  header .filter div p {
+  header #filter div p {
     margin-top: calc(33px/1.1);
   }
 }
 
 @media screen and (max-width: 600px) {
-  header .filter div p {
+  header #filter div p {
     margin-top: calc(33px/1.5);
   }
 }
 
 @media screen and (max-height: 350px) {
-  header .filter div p {
+  header #filter div p {
     display: none;
   }
 }
 
 @media screen and (max-height: 500px) {
-  header .filter div .button {
+  header #filter div .button {
     margin-top: 0;
   }
 }
